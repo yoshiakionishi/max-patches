@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 382.0, 79.0, 397.0, 320.0 ],
+		"rect" : [ 382.0, 79.0, 397.0, 366.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -40,13 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "drop an SDIF file here",
+					"bordercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"hint" : "drag and drop an SDIF file here",
+					"id" : "obj-11",
+					"maxclass" : "dropfile",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 29.5, 18.5, 146.0, 44.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.75, 107.5, 146.0, 198.5 ],
+					"rounded" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-3",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.166671752929688, 74.0, 167.0, 51.0 ],
+					"patching_rect" : [ 8.5, 585.0, 167.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 2.5, 60.5, 213.0, 40.0 ],
@@ -63,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.166671752929688, 48.0, 388.0, 22.0 ],
+					"patching_rect" : [ 8.5, 559.0, 388.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 34.5, 388.0, 22.0 ],
 					"text" : " ~ SDIF file playback/recording mechanism"
@@ -79,7 +96,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.166671752929688, 17.0, 388.0, 35.0 ],
+					"patching_rect" : [ 8.5, 528.0, 388.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 3.5, 388.0, 35.0 ],
 					"text" : "SDIF Reader-Recorder"
@@ -105,7 +122,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 275.0, 219.0 ],
+						"rect" : [ 527.0, 148.0, 585.0, 400.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -135,20 +152,186 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-15",
-									"linecount" : 14,
+									"bgcolor" : [ 0.396078431372549, 0.176470588235294, 0.176470588235294, 1.0 ],
+									"id" : "obj-53",
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 6.5, 8.5, 251.0, 194.0 ],
-									"text" : "NOTE:\n\nThis Patch makes use of externals developed at the Center for New Music and Audio Technologies (CNMAT) at the University of California, Berkeley. You need CNMAT Externals installed on your computer.\n\nDrop an SDIF file (Partial Tracking type) into the red box.  You will hear the SDIF rendition of the sound.  Quite fun.\n\nWARNING: The Path to the file MUST NOT contain special characters \"é\" \"ü\" etc..."
+									"patching_rect" : [ 11.0, 264.0, 567.0, 127.0 ],
+									"text" : "DISCLAIMER:\n\nI, Yoshiaki Onishi, the creator of this Max patch and the app version of the patch, hereby declare that this Max patch/app is provided \"as is\" without warranty of any kind. I make no warranties, express or implied, that this application is free of error, or is consistent with any particular standard of merchantability, or that they will meet your requirements for any particular purpose. This Max patch/app should not be relied on for solving a problem whose incorrect solution could result in injury to a person or loss of property. If you do use it in such a manner, it is at your own risk. I disclaim all liability for direct, indirect, or consequential damages resulting from your use of the Max patch/app.",
+									"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"handoff" : "",
+									"id" : "obj-48",
+									"maxclass" : "ubutton",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 409.0, 51.0, 110.0, 33.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.388235294117647, 0.717647058823529, 0.666666666666667, 1.0 ],
+									"id" : "obj-49",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 409.0, 51.0, 109.0, 33.0 ],
+									"text" : "Creative Common BY-NC-SA 3.0",
+									"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-47",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 558.0, 68.0, 279.0, 49.0 ],
+									"text" : ";\rmax launchbrowser https://creativecommons.org/licenses/by-nc-sa/3.0/"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"handoff" : "",
+									"id" : "obj-38",
+									"maxclass" : "ubutton",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 409.0, 130.5, 83.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.388235294117647, 0.717647058823529, 0.666666666666667, 1.0 ],
+									"id" : "obj-39",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 409.0, 130.5, 83.0, 20.0 ],
+									"text" : "Contact Yoshi",
+									"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-37",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 558.0, 203.0, 293.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://yoshionishi.com/en/contact/"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-36",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.0, 44.0, 399.0, 114.0 ],
+									"style" : "chiba",
+									"text" : "This Max patch was made by Yoshiaki Onishi and is licenced under the Creative Common BY-NC-SA 3.0. You may freely download this patch/app and use it for non-commercial and private use. Click the link to the right for more information on what this licence means and what you should do.\n\nAny questions concerning this patch/app, click the panel to the right to contact the developer."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"id" : "obj-9",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.0, 175.0, 385.0, 33.0 ],
+									"text" : "The Max patch was made with the help of the following Max Externals.\nYou need them installed on your computer to run this patch properly:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontsize" : 16.0,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.0, 12.0, 560.0, 24.0 ],
+									"text" : "NOTICE AND DISCLAIMER",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.388235294117647, 0.717647058823529, 0.666666666666667, 1.0 ],
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.0, 217.0, 385.0, 33.0 ],
+									"text" : "CNMAT Externals: Center for New Music and Audio Technologies (CNMAT) at the University of California, Berkeley",
+									"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 								}
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"hidden" : 1,
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-47", 0 ],
+									"hidden" : 1,
+									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "Jamoma_highlighted_orange",
+								"default" : 								{
+									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "comment001",
+								"parentstyle" : "Jamoma_highlighted_orange",
+								"multi" : 1
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 639.0, 476.0, 110.0, 35.0 ],
@@ -177,7 +360,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 504.5, 18.5, 64.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.5, 259.0, 131.5, 39.0 ],
+					"presentation_rect" : [ 164.5, 267.0, 131.5, 39.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -205,7 +388,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 367.5, 18.5, 131.5, 36.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.5, 150.25, 131.5, 36.5 ],
+					"presentation_rect" : [ 164.5, 177.25, 131.5, 36.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -258,7 +441,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 184.5, 18.5, 64.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.5, 107.5, 64.0, 39.0 ],
+					"presentation_rect" : [ 164.5, 107.5, 64.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -325,7 +508,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 263.5, 18.5, 64.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 234.0, 107.5, 64.0, 39.0 ],
+					"presentation_rect" : [ 234.0, 107.5, 64.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -452,9 +635,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 29.5, 319.0, 118.5, 62.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 15.75, 236.0, 145.5, 62.0 ],
-					"text" : "\"Yoshi's SSD:/Users/yoshiakionishi/Desktop/slap-tongue.sdif\"",
+					"presentation_rect" : [ 15.75, 327.0, 374.5, 22.0 ],
+					"text" : "\"Yoshi's SSD:/Users/yoshiakionishi/Desktop/mystic-resam.sdif\"",
 					"textcolor" : [ 0.670588235294118, 0.670588235294118, 0.670588235294118, 1.0 ]
 				}
 
@@ -483,7 +665,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 576.0, 225.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 205.0, 202.0, 72.0, 20.0 ],
+					"presentation_rect" : [ 204.0, 220.0, 72.0, 20.0 ],
 					"text" : "record OFF",
 					"textcolor" : [ 0.4, 0.8, 1.0, 1.0 ]
 				}
@@ -499,7 +681,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 576.0, 247.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 205.0, 224.0, 72.0, 20.0 ],
+					"presentation_rect" : [ 204.0, 242.0, 72.0, 20.0 ],
 					"text" : "record ON",
 					"textcolor" : [ 1.0, 0.4, 0.4, 1.0 ]
 				}
@@ -519,7 +701,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 558.0, 225.0, 18.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 187.0, 202.0, 18.0, 42.0 ],
+					"presentation_rect" : [ 186.0, 220.0, 18.0, 42.0 ],
 					"size" : 2,
 					"style" : "chiba",
 					"value" : 0
@@ -551,41 +733,6 @@
 					"patching_rect" : [ 521.5, 617.0, 117.0, 21.0 ],
 					"text" : "elapsed time (ms)",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 507.5, 445.0, 12.0, 67.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 495.5, 445.0, 12.0, 67.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"id" : "obj-22",
-					"local" : 1,
-					"maxclass" : "ezadc~",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 484.5, 392.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -728,21 +875,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-15",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 570.5, 40.5, 212.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.75, 114.0, 146.0, 18.0 ],
-					"text" : "Drop an SDIF file (1TRC) here"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-50",
 					"maxclass" : "message",
@@ -798,23 +930,6 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "drop an SDIF file here",
-					"bordercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"hint" : "drag and drop an SDIF file here",
-					"id" : "obj-11",
-					"maxclass" : "dropfile",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 29.5, 18.5, 146.0, 44.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.75, 107.5, 146.0, 122.0 ],
-					"rounded" : 25.0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -863,6 +978,23 @@
 					"outlettype" : [ "list", "" ],
 					"patching_rect" : [ 281.5, 339.0, 97.0, 22.0 ],
 					"text" : "SDIF-tuples une"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-15",
+					"linecount" : 12,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 570.5, 40.5, 212.0, 141.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 15.75, 113.0, 146.0, 185.0 ],
+					"text" : "Drop an SDIF file (type 1TRC) here.\n\nThen click \"Play\" to hear the FFT rendition of the SDIF file. \n\nIn order to render an .aiff file of the SDIF file, upon dropping an SDIF file here, set the file name by clicking the button \"Set Filename For Recording,\" then turn select \"record ON,\" then click \"Record.\" Once the process is complete, \"record OFF\" will be toggled automatically."
 				}
 
 			}
@@ -945,44 +1077,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.321569, 0.709804, 0.321569, 0.898039 ],
-					"destination" : [ "obj-13", 0 ],
-					"order" : 1,
-					"source" : [ "obj-22", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.901961, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-16", 0 ],
-					"order" : 0,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.317647, 0.709804, 0.321569, 1.0 ],
-					"destination" : [ "obj-31", 1 ],
-					"midpoints" : [ 520.0, 523.75, 629.0, 523.75 ],
-					"order" : 0,
-					"source" : [ "obj-22", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.901961, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 494.0, 523.25, 472.0, 523.25 ],
-					"order" : 1,
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1208,7 +1302,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"order" : 1,
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 0,
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
+					"order" : 2,
 					"source" : [ "obj-74", 0 ]
 				}
 
@@ -1222,7 +1333,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"order" : 0,
+					"source" : [ "obj-78", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 1 ],
+					"order" : 1,
 					"source" : [ "obj-78", 1 ]
 				}
 
@@ -1230,6 +1358,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
 					"source" : [ "obj-78", 0 ]
 				}
 

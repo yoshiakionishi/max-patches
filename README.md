@@ -7,6 +7,8 @@ This repository contains Max patches made by Yoshiaki Onishi. You are welcome to
 
 Unless otherwise noted, all patches are licenced under the Creative Common BY-NC-SA 3.0. You may freely download this patch/app and use it for non-commercial and private use.   https://creativecommons.org/licenses/by-nc-sa/3.0/
 
+If you found this repoisitory or any of the patches useful, feel free to get in touch with me at info (at) yoshionishi [dot] com
+
 As of November 28, 2020, this repository contains the following patches:
  - SDIF-reader-recorder-v5.maxpat
  

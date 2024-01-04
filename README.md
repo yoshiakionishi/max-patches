@@ -11,6 +11,7 @@ If you found this repoisitory or any of the patches useful, feel free to get in 
 
 As of November 28, 2020, this repository contains the following patches:
  - SDIF-reader-recorder-v5.maxpat
+
 As of January 4, 2024, the following was added to the repository:
  - JavaScript and Jitter Studies (Jan 2024)
  

@@ -45,7 +45,7 @@ var dd = Math.abs((final_list[1]/final_list[0]));
 var ee = Math.abs((final_list[1]*final_list[0]));
 // glcolor = red, green, blue, alpha (transparency)
 jitterSketch.glcolor(dd, cc, bb, aa);
-jitterSketch.glpointsize(3);
+jitterSketch.glpointsize(5);
 jitterSketch.point(final_list[0], final_list[1], 0);
 
    // post(final_list+"\n");

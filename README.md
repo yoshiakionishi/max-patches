@@ -9,11 +9,11 @@ Unless otherwise noted, all patches are licenced under the Creative Common BY-NC
 
 If you found this repoisitory or any of the patches useful, feel free to get in touch with me at info (at) yoshionishi [dot] com
 
-As of November 28, 2020, this repository contains the following patches:
- - SDIF-reader-recorder-v5.maxpat
+The following patches have been adeed to the repository:
+May 1, 2024: !! Farnell, Andy - Designing Sound (Translating Pure Data files in Max) 
+January 4, 2024: JavaScript and Jitter Studies (Jan 2024) 
+November 28, 2020: SDIF-reader-recorder-v5.maxpat
 
-As of January 4, 2024, the following was added to the repository:
- - JavaScript and Jitter Studies (Jan 2024)
  
 
 Disclaimer:
